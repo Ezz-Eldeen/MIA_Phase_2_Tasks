@@ -48,7 +48,7 @@ void encoderISR() {
     encoderCount = 0;  
   }
 }
-//idk why it keeps adding "1" one time when I rotate counter clockwise but I can't seem to be able to fix it
+//only problem with this code is the ISR which will add 1 if for the first time I rotate counter clockwise since it doesn't have the previous pin state(or atleast that's what I think)
 
 
 // Getting the cutoff frequency for the low pass filter:
